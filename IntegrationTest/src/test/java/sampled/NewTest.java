@@ -16,7 +16,7 @@ public class NewTest {
 	  driver.get("http://www.google.co.in");
 	  String title = driver.getTitle();
 	  System.out.println(title);
-	  
+	  System.out.println("This is testing Jenkins");
 	  Assert.assertEquals(title, "Google");
 	  driver.close();
   }
