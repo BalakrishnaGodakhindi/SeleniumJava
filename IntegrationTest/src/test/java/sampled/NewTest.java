@@ -9,7 +9,7 @@ public class NewTest {
   @Test
   public void testGoogleTitle() {
 	  
-	  String path="C:\\Users\\Ganesh\\Desktop\\Balakrishna\\chromedriver_win32_1\\chromedriver.exe";
+	  String path="chromedriver.exe";
 	  
 	  System.setProperty("webdriver.chrome.driver", path);
 	  WebDriver driver = new ChromeDriver();

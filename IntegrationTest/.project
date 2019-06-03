@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.buildship.core.gradleprojectnature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>chromedriver.exe</name>
+			<type>1</type>
+			<location>C:/Users/Ganesh/Desktop/Balakrishna/chromedriver_win32_1/chromedriver.exe</location>
+		</link>
+	</linkedResources>
 </projectDescription>
