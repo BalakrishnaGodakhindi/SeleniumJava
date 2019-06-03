@@ -20,7 +20,7 @@ public class NewTest {
 	  driver.get("http://www.google.co.in");
 	  String title = driver.getTitle();
 	  System.out.println(title);
-	  System.out.println("This is testing Jenkins - Git and Gradle comments are added");
+	  System.out.println("Launched from Jenkins war file");
 	  Assert.assertEquals(title, "Google");
 	  driver.close();
   }
