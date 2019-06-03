@@ -16,7 +16,7 @@ public class NewTest {
 	  System.setProperty("webdriver.chrome.driver", path);
 	  WebDriver driver = new ChromeDriver();
 	  //Set to high time out as it wasn't working in jenkin run
-	  //driver.manage().timeouts().pageLoadTimeout(120, TimeUnit.SECONDS);
+	  driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 	  driver.get("http://www.google.co.in");
 	  String title = driver.getTitle();
 	  System.out.println(title);
