@@ -1,5 +1,7 @@
 package sampled;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
@@ -13,6 +15,8 @@ public class NewTest {
 	  
 	  System.setProperty("webdriver.chrome.driver", path);
 	  WebDriver driver = new ChromeDriver();
+	  //Set to high time out as it wasn't working in jenkin run
+	  driver.manage().timeouts().pageLoadTimeout(180, TimeUnit.SECONDS);
 	  driver.get("http://www.google.co.in");
 	  String title = driver.getTitle();
 	  System.out.println(title);
