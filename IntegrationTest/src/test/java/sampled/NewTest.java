@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class NewTest {
   @Test
-  public void testGoogleTitle() {
+  public void testGoogleTitle() throws InterruptedException {
 	  
 	  String path="config/chromedriver.exe";
 	  
@@ -21,6 +21,7 @@ public class NewTest {
 	  String title = driver.getTitle();
 	  System.out.println(title);
 	  System.out.println("Launched from Jenkins war file - To Test");
+	  Thread.sleep(5000);
 	  Assert.assertEquals(title, "Google");
 	  driver.close();
   }
